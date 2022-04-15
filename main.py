@@ -12,7 +12,7 @@ def welcome():
     if request.user_agent.string.lower() == 'ehc':
       print(request.host + "1")
       ehc = 1
-    if ehc == 1 and request.referrer == 'http://' + request.remote_addr:
+    if ehc == 1 and request.referrer == 'http://' + request.host:
       ehc = 3
     if ehc == 3 and request.headers.get('DNT') == '1':
       ehc = 4
