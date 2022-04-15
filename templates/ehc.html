@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>EHC</title>
+  </head>
+  <body>
+    {% if flag == 1 %}
+      <h1>Congrat!!!</h1>
+      <h2>The flag is: </h2>
+      <button onclick="myFunction()">Click to get flag</button>
+      <p id="next">...</p>
+    {% elif flag == 3 %}
+      <h1>One more thing, EHC members must know some about security, WE CANNOT BE TRACKED!</h1>
+    {% elif flag == 4 %}
+      <h1>EHC members are from FPT university. We are gLoBAl cITizENs, so we all know how to speak Japanese. Can you?</h1>
+    {% elif flag == 5 %}
+      <h1>EHC members must know about history of EHC, at least the year our home was established. This site was built from that time, and was only accessible at that time too!</h1>
+    {% elif flag == 6%}
+      <h1>Great job! You can take the flag now!</h1>
+      <h2>ehc{vodich}</h2>
+    {% elif flag == 0 %}
+      <h1>You are not EHC member! An EHC member must use 'EHC' browser for surfing the web!</h1>
+    {% endif %}
+  </body>
+
+
+
+  <script>
+    function myFunction() {
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      document.getElementById("next").innerHTML = "You come this far, nice try, but we don't trusted anyone from other site"
+    }
+  </script>
+</html>
